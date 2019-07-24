@@ -1,0 +1,214 @@
+{
+  "frames": {
+    "grass_01": {
+      "frame": { "x": 514, "y": 1542, "w": 256, "h": 256 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 256 },
+      "sourceSize": { "w": 256, "h": 256 }
+    },
+    "grass_02": {
+      "frame": { "x": 1285, "y": 1028, "w": 256, "h": 256 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 256 },
+      "sourceSize": { "w": 256, "h": 256 }
+    },
+    "grass_03": {
+      "frame": { "x": 1285, "y": 771, "w": 256, "h": 256 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 256 },
+      "sourceSize": { "w": 256, "h": 256 }
+    },
+    "grass_04": {
+      "frame": { "x": 1285, "y": 514, "w": 256, "h": 256 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 256 },
+      "sourceSize": { "w": 256, "h": 256 }
+    },
+    "grass_dirt_01": {
+      "frame": { "x": 1285, "y": 257, "w": 256, "h": 256 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 256 },
+      "sourceSize": { "w": 256, "h": 256 }
+    },
+    "grass_dirt_02": {
+      "frame": { "x": 1285, "y": 0, "w": 256, "h": 256 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 256 },
+      "sourceSize": { "w": 256, "h": 256 }
+    },
+    "grass_dirt_03": {
+      "frame": { "x": 1028, "y": 1542, "w": 256, "h": 256 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 256 },
+      "sourceSize": { "w": 256, "h": 256 }
+    },
+    "grass_dirt_04": {
+      "frame": { "x": 1028, "y": 1285, "w": 256, "h": 256 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 256 },
+      "sourceSize": { "w": 256, "h": 256 }
+    },
+    "grass_dirt_05": {
+      "frame": { "x": 1028, "y": 1028, "w": 256, "h": 256 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 256 },
+      "sourceSize": { "w": 256, "h": 256 }
+    },
+    "grass_dirt_06": {
+      "frame": { "x": 1028, "y": 771, "w": 256, "h": 256 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 256 },
+      "sourceSize": { "w": 256, "h": 256 }
+    },
+    "grass_dirt_07": {
+      "frame": { "x": 1028, "y": 514, "w": 256, "h": 256 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 256 },
+      "sourceSize": { "w": 256, "h": 256 }
+    },
+    "grass_dirt_08": {
+      "frame": { "x": 1028, "y": 257, "w": 256, "h": 256 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 256 },
+      "sourceSize": { "w": 256, "h": 256 }
+    },
+    "grass_plain_01": {
+      "frame": { "x": 1028, "y": 0, "w": 256, "h": 256 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 256 },
+      "sourceSize": { "w": 256, "h": 256 }
+    },
+    "grass_road_corner_01": {
+      "frame": { "x": 771, "y": 1542, "w": 256, "h": 256 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 256 },
+      "sourceSize": { "w": 256, "h": 256 }
+    },
+    "grass_road_corner_02": {
+      "frame": { "x": 771, "y": 1285, "w": 256, "h": 256 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 256 },
+      "sourceSize": { "w": 256, "h": 256 }
+    },
+    "grass_road_corner_03": {
+      "frame": { "x": 771, "y": 1028, "w": 256, "h": 256 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 256 },
+      "sourceSize": { "w": 256, "h": 256 }
+    },
+    "grass_road_corner_04": {
+      "frame": { "x": 771, "y": 771, "w": 256, "h": 256 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 256 },
+      "sourceSize": { "w": 256, "h": 256 }
+    },
+    "grass_road_cross_01": {
+      "frame": { "x": 771, "y": 514, "w": 256, "h": 256 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 256 },
+      "sourceSize": { "w": 256, "h": 256 }
+    },
+    "grass_road_end_01": {
+      "frame": { "x": 771, "y": 257, "w": 256, "h": 256 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 256 },
+      "sourceSize": { "w": 256, "h": 256 }
+    },
+    "grass_road_straight_01": {
+      "frame": { "x": 771, "y": 0, "w": 256, "h": 256 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 256 },
+      "sourceSize": { "w": 256, "h": 256 }
+    },
+    "grass_road_straight_02": {
+      "frame": { "x": 1285, "y": 1285, "w": 256, "h": 256 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 256 },
+      "sourceSize": { "w": 256, "h": 256 }
+    },
+    "grass_road_straight_03": {
+      "frame": { "x": 514, "y": 1285, "w": 256, "h": 256 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 256 },
+      "sourceSize": { "w": 256, "h": 256 }
+    },
+    "grass_road_straight_04": {
+      "frame": { "x": 514, "y": 1028, "w": 256, "h": 256 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 256 },
+      "sourceSize": { "w": 256, "h": 256 }
+    },
+    "grass_road_t_01": {
+      "frame": { "x": 514, "y": 771, "w": 256, "h": 256 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 256 },
+      "sourceSize": { "w": 256, "h": 256 }
+    },
+    "grass_road_t_02": {
+      "frame": { "x": 514, "y": 514, "w": 256, "h": 256 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 256 },
+      "sourceSize": { "w": 256, "h": 256 }
+    },
+    "grass_road_t_03": {
+      "frame": { "x": 514, "y": 257, "w": 256, "h": 256 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 256 },
+      "sourceSize": { "w": 256, "h": 256 }
+    },
+    "grass_road_t_04": {
+      "frame": { "x": 514, "y": 0, "w": 256, "h": 256 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 256 },
+      "sourceSize": { "w": 256, "h": 256 }
+    },
+    "grass_rocks_01": {
+      "frame": { "x": 257, "y": 1542, "w": 256, "h": 256 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 256 },
+      "sourceSize": { "w": 256, "h": 256 }
+    },
+    "grass_rocks_02": {
+      "frame": { "x": 257, "y": 1285, "w": 256, "h": 256 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 256 },
+      "sourceSize": { "w": 256, "h": 256 }
+    },
+    "grass_rocks_03": {
+      "frame": { "x": 257, "y": 1028, "w": 256, "h": 256 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 256 },
+      "sourceSize": { "w": 256, "h": 256 }
+    },
+    "grass_rocks_04": {
+      "frame": { "x": 257, "y": 771, "w": 256, "h": 256 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 256 },
+      "sourceSize": { "w": 256, "h": 256 }
+    },
+    "grass_rocks_05": {
+      "frame": { "x": 257, "y": 514, "w": 256, "h": 256 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 256 },
+      "sourceSize": { "w": 256, "h": 256 }
+    },
+    "grass_rocks_06": {
+      "frame": { "x": 257, "y": 257, "w": 256, "h": 256 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 256 },
+      "sourceSize": { "w": 256, "h": 256 }
+    },
+    "grass_rocks_07": {
+      "frame": { "x": 257, "y": 0, "w": 256, "h": 256 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 256 },
+      "sourceSize": { "w": 256, "h": 256 }
+    },
+    "grass_rocks_08": {
+      "frame": { "x": 0, "y": 1542, "w": 256, "h": 256 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 256 },
+      "sourceSize": { "w": 256, "h": 256 }
+    },
+    "grass_water_corner_in_01": {
+      "frame": { "x": 0, "y": 1285, "w": 256, "h": 256 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 256 },
+      "sourceSize": { "w": 256, "h": 256 }
+    },
+    "grass_water_corner_in_02": {
+      "frame": { "x": 0, "y": 1028, "w": 256, "h": 256 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 256 },
+      "sourceSize": { "w": 256, "h": 256 }
+    },
+    "grass_water_corner_out_01": {
+      "frame": { "x": 0, "y": 771, "w": 256, "h": 256 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 256 },
+      "sourceSize": { "w": 256, "h": 256 }
+    },
+    "grass_water_plain_01": {
+      "frame": { "x": 0, "y": 514, "w": 256, "h": 256 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 256 },
+      "sourceSize": { "w": 256, "h": 256 }
+    },
+    "grass_water_straight_01": {
+      "frame": { "x": 0, "y": 257, "w": 256, "h": 256 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 256 },
+      "sourceSize": { "w": 256, "h": 256 }
+    },
+    "grass_water_straight_02": {
+      "frame": { "x": 0, "y": 0, "w": 256, "h": 256 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 256 },
+      "sourceSize": { "w": 256, "h": 256 }
+    }
+  },
+  "meta": {
+    "image": "grass.png",
+    "size": { "w": 1542, "h": 1799 },
+    "scale": "1"
+  }
+}

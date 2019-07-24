@@ -1,0 +1,32 @@
+{
+  "name": "pixinode",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack -p",
+    "start": "webpack-dev-server --env.env=dev --hot --mode development"
+  },
+  "dependencies": {
+    "chance": "^1.0.18",
+    "lodash": "^4.17.15",
+    "pixi-filters": "^3.0.3",
+    "pixi.js": "^5.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.1.0",
+    "file-loader": "^4.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "image-webpack-loader": "^5.0.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.36.1",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
+  },
+  "author": "luz",
+  "license": "ISC"
+}

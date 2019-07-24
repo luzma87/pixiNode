@@ -1,0 +1,329 @@
+{
+  "frames": {
+    "earth_blob_01": {
+      "frame": { "x": 186, "y": 410, "w": 42, "h": 56 },
+      "spriteSourceSize": { "x": 2, "y": 0, "w": 46, "h": 56 },
+      "sourceSize": { "w": 46, "h": 56 }
+    },
+    "earth_blob_02": {
+      "frame": { "x": 63, "y": 0, "w": 46, "h": 57 },
+      "spriteSourceSize": { "x": 0, "y": 2, "w": 46, "h": 59 },
+      "sourceSize": { "w": 46, "h": 59 }
+    },
+    "earth_blob_03": {
+      "frame": { "x": 186, "y": 410, "w": 42, "h": 56 },
+      "spriteSourceSize": { "x": 2, "y": 0, "w": 46, "h": 57 },
+      "sourceSize": { "w": 46, "h": 57 }
+    },
+    "earth_blob_04": {
+      "frame": { "x": 401, "y": 297, "w": 38, "h": 53 },
+      "spriteSourceSize": { "x": 4, "y": 2, "w": 46, "h": 55 },
+      "sourceSize": { "w": 46, "h": 55 }
+    },
+    "earth_idle_back": {
+      "frame": { "x": 0, "y": 382, "w": 46, "h": 76 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 46, "h": 76 },
+      "sourceSize": { "w": 46, "h": 76 }
+    },
+    "earth_idle_front": {
+      "frame": { "x": 47, "y": 382, "w": 46, "h": 76 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 46, "h": 76 },
+      "sourceSize": { "w": 46, "h": 76 }
+    },
+    "earth_idle_left": {
+      "frame": { "x": 286, "y": 0, "w": 42, "h": 76 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 42, "h": 76 },
+      "sourceSize": { "w": 42, "h": 76 }
+    },
+    "earth_idle_right": {
+      "frame": { "x": 243, "y": 150, "w": 42, "h": 76 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 42, "h": 76 },
+      "sourceSize": { "w": 42, "h": 76 }
+    },
+    "earth_walk_back_01": {
+      "frame": { "x": 243, "y": 0, "w": 42, "h": 74 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 42, "h": 74 },
+      "sourceSize": { "w": 42, "h": 74 }
+    },
+    "earth_walk_back_02": {
+      "frame": { "x": 272, "y": 375, "w": 42, "h": 74 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 42, "h": 74 },
+      "sourceSize": { "w": 42, "h": 74 }
+    },
+    "earth_walk_front_01": {
+      "frame": { "x": 243, "y": 75, "w": 42, "h": 74 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 42, "h": 74 },
+      "sourceSize": { "w": 42, "h": 74 }
+    },
+    "earth_walk_front_02": {
+      "frame": { "x": 286, "y": 152, "w": 42, "h": 74 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 42, "h": 74 },
+      "sourceSize": { "w": 42, "h": 74 }
+    },
+    "earth_walk_left_01": {
+      "frame": { "x": 141, "y": 339, "w": 44, "h": 74 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 44, "h": 74 },
+      "sourceSize": { "w": 44, "h": 74 }
+    },
+    "earth_walk_left_02": {
+      "frame": { "x": 200, "y": 0, "w": 42, "h": 74 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 42, "h": 74 },
+      "sourceSize": { "w": 42, "h": 74 }
+    },
+    "earth_walk_right_01": {
+      "frame": { "x": 286, "y": 77, "w": 42, "h": 74 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 42, "h": 74 },
+      "sourceSize": { "w": 42, "h": 74 }
+    },
+    "earth_walk_right_02": {
+      "frame": { "x": 110, "y": 201, "w": 44, "h": 74 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 44, "h": 74 },
+      "sourceSize": { "w": 44, "h": 74 }
+    },
+    "fire_blob_01": {
+      "frame": { "x": 411, "y": 144, "w": 38, "h": 60 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 38, "h": 60 },
+      "sourceSize": { "w": 38, "h": 60 }
+    },
+    "fire_blob_02": {
+      "frame": { "x": 401, "y": 236, "w": 38, "h": 60 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 38, "h": 60 },
+      "sourceSize": { "w": 38, "h": 60 }
+    },
+    "fire_blob_03": {
+      "frame": { "x": 401, "y": 403, "w": 38, "h": 60 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 38, "h": 60 },
+      "sourceSize": { "w": 38, "h": 60 }
+    },
+    "fire_blob_04": {
+      "frame": { "x": 411, "y": 81, "w": 38, "h": 62 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 38, "h": 62 },
+      "sourceSize": { "w": 38, "h": 62 }
+    },
+    "fire_idle_back": {
+      "frame": { "x": 63, "y": 58, "w": 46, "h": 80 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 46, "h": 80 },
+      "sourceSize": { "w": 46, "h": 80 }
+    },
+    "fire_idle_front": {
+      "frame": { "x": 63, "y": 139, "w": 46, "h": 80 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 46, "h": 80 },
+      "sourceSize": { "w": 46, "h": 80 }
+    },
+    "fire_idle_left": {
+      "frame": { "x": 372, "y": 0, "w": 42, "h": 80 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 42, "h": 80 },
+      "sourceSize": { "w": 42, "h": 80 }
+    },
+    "fire_idle_right": {
+      "frame": { "x": 329, "y": 0, "w": 42, "h": 80 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 42, "h": 80 },
+      "sourceSize": { "w": 42, "h": 80 }
+    },
+    "fire_walk_back_01": {
+      "frame": { "x": 358, "y": 316, "w": 42, "h": 78 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 42, "h": 78 },
+      "sourceSize": { "w": 42, "h": 78 }
+    },
+    "fire_walk_back_02": {
+      "frame": { "x": 358, "y": 395, "w": 42, "h": 74 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 42, "h": 74 },
+      "sourceSize": { "w": 42, "h": 74 }
+    },
+    "fire_walk_front_01": {
+      "frame": { "x": 315, "y": 379, "w": 42, "h": 78 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 42, "h": 78 },
+      "sourceSize": { "w": 42, "h": 78 }
+    },
+    "fire_walk_front_02": {
+      "frame": { "x": 358, "y": 239, "w": 42, "h": 76 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 42, "h": 76 },
+      "sourceSize": { "w": 42, "h": 76 }
+    },
+    "fire_walk_left_01": {
+      "frame": { "x": 329, "y": 160, "w": 42, "h": 78 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 42, "h": 78 },
+      "sourceSize": { "w": 42, "h": 78 }
+    },
+    "fire_walk_left_02": {
+      "frame": { "x": 200, "y": 75, "w": 42, "h": 78 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 42, "h": 78 },
+      "sourceSize": { "w": 42, "h": 78 }
+    },
+    "fire_walk_right_01": {
+      "frame": { "x": 315, "y": 300, "w": 42, "h": 78 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 42, "h": 78 },
+      "sourceSize": { "w": 42, "h": 78 }
+    },
+    "fire_walk_right_02": {
+      "frame": { "x": 329, "y": 81, "w": 42, "h": 78 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 42, "h": 78 },
+      "sourceSize": { "w": 42, "h": 78 }
+    },
+    "grass_blob_01": {
+      "frame": { "x": 415, "y": 0, "w": 38, "h": 48 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 38, "h": 48 },
+      "sourceSize": { "w": 38, "h": 48 }
+    },
+    "grass_blob_02": {
+      "frame": { "x": 372, "y": 187, "w": 38, "h": 48 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 38, "h": 48 },
+      "sourceSize": { "w": 38, "h": 48 }
+    },
+    "grass_blob_03": {
+      "frame": { "x": 141, "y": 414, "w": 38, "h": 48 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 38, "h": 48 },
+      "sourceSize": { "w": 38, "h": 48 }
+    },
+    "grass_blob_04": {
+      "frame": { "x": 229, "y": 410, "w": 38, "h": 48 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 38, "h": 48 },
+      "sourceSize": { "w": 38, "h": 48 }
+    },
+    "grass_idle_back": {
+      "frame": { "x": 110, "y": 63, "w": 46, "h": 74 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 46, "h": 74 },
+      "sourceSize": { "w": 46, "h": 74 }
+    },
+    "grass_idle_front": {
+      "frame": { "x": 94, "y": 350, "w": 46, "h": 74 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 46, "h": 74 },
+      "sourceSize": { "w": 46, "h": 74 }
+    },
+    "grass_idle_left": {
+      "frame": { "x": 272, "y": 300, "w": 42, "h": 74 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 42, "h": 74 },
+      "sourceSize": { "w": 42, "h": 74 }
+    },
+    "grass_idle_right": {
+      "frame": { "x": 157, "y": 0, "w": 42, "h": 74 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 42, "h": 74 },
+      "sourceSize": { "w": 42, "h": 74 }
+    },
+    "grass_walk_back_01": {
+      "frame": { "x": 186, "y": 337, "w": 42, "h": 72 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 42, "h": 72 },
+      "sourceSize": { "w": 42, "h": 72 }
+    },
+    "grass_walk_back_02": {
+      "frame": { "x": 157, "y": 75, "w": 42, "h": 72 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 42, "h": 72 },
+      "sourceSize": { "w": 42, "h": 72 }
+    },
+    "grass_walk_front_01": {
+      "frame": { "x": 155, "y": 264, "w": 42, "h": 72 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 42, "h": 72 },
+      "sourceSize": { "w": 42, "h": 72 }
+    },
+    "grass_walk_front_02": {
+      "frame": { "x": 200, "y": 154, "w": 42, "h": 72 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 42, "h": 72 },
+      "sourceSize": { "w": 42, "h": 72 }
+    },
+    "grass_walk_left_01": {
+      "frame": { "x": 198, "y": 264, "w": 42, "h": 72 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 42, "h": 72 },
+      "sourceSize": { "w": 42, "h": 72 }
+    },
+    "grass_walk_left_02": {
+      "frame": { "x": 241, "y": 227, "w": 42, "h": 72 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 42, "h": 72 },
+      "sourceSize": { "w": 42, "h": 72 }
+    },
+    "grass_walk_right_01": {
+      "frame": { "x": 229, "y": 337, "w": 42, "h": 72 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 42, "h": 72 },
+      "sourceSize": { "w": 42, "h": 72 }
+    },
+    "grass_walk_right_02": {
+      "frame": { "x": 284, "y": 227, "w": 42, "h": 72 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 42, "h": 72 },
+      "sourceSize": { "w": 42, "h": 72 }
+    },
+    "water_blob_01": {
+      "frame": { "x": 372, "y": 136, "w": 38, "h": 50 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 38, "h": 50 },
+      "sourceSize": { "w": 38, "h": 50 }
+    },
+    "water_blob_02": {
+      "frame": { "x": 157, "y": 148, "w": 38, "h": 52 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 38, "h": 52 },
+      "sourceSize": { "w": 38, "h": 52 }
+    },
+    "water_blob_03": {
+      "frame": { "x": 372, "y": 81, "w": 38, "h": 54 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 38, "h": 54 },
+      "sourceSize": { "w": 38, "h": 54 }
+    },
+    "water_blob_04": {
+      "frame": { "x": 401, "y": 351, "w": 38, "h": 51 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 38, "h": 51 },
+      "sourceSize": { "w": 38, "h": 51 }
+    },
+    "water_idle_back": {
+      "frame": { "x": 0, "y": 254, "w": 62, "h": 64 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 62, "h": 64 },
+      "sourceSize": { "w": 62, "h": 64 }
+    },
+    "water_idle_front": {
+      "frame": { "x": 0, "y": 126, "w": 62, "h": 64 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 62, "h": 64 },
+      "sourceSize": { "w": 62, "h": 64 }
+    },
+    "water_idle_left": {
+      "frame": { "x": 63, "y": 220, "w": 46, "h": 64 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 46, "h": 64 },
+      "sourceSize": { "w": 46, "h": 64 }
+    },
+    "water_idle_right": {
+      "frame": { "x": 63, "y": 285, "w": 46, "h": 64 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 46, "h": 64 },
+      "sourceSize": { "w": 46, "h": 64 }
+    },
+    "water_walk_back_01": {
+      "frame": { "x": 0, "y": 191, "w": 62, "h": 62 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 62, "h": 62 },
+      "sourceSize": { "w": 62, "h": 62 }
+    },
+    "water_walk_back_02": {
+      "frame": { "x": 0, "y": 319, "w": 62, "h": 62 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 62, "h": 62 },
+      "sourceSize": { "w": 62, "h": 62 }
+    },
+    "water_walk_front_01": {
+      "frame": { "x": 0, "y": 63, "w": 62, "h": 62 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 62, "h": 62 },
+      "sourceSize": { "w": 62, "h": 62 }
+    },
+    "water_walk_front_02": {
+      "frame": { "x": 0, "y": 0, "w": 62, "h": 62 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 62, "h": 62 },
+      "sourceSize": { "w": 62, "h": 62 }
+    },
+    "water_walk_left_01": {
+      "frame": { "x": 110, "y": 0, "w": 46, "h": 62 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 46, "h": 62 },
+      "sourceSize": { "w": 46, "h": 62 }
+    },
+    "water_walk_left_02": {
+      "frame": { "x": 155, "y": 201, "w": 44, "h": 62 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 44, "h": 62 },
+      "sourceSize": { "w": 44, "h": 62 }
+    },
+    "water_walk_right_01": {
+      "frame": { "x": 110, "y": 276, "w": 44, "h": 62 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 44, "h": 62 },
+      "sourceSize": { "w": 44, "h": 62 }
+    },
+    "water_walk_right_02": {
+      "frame": { "x": 110, "y": 138, "w": 46, "h": 62 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 46, "h": 62 },
+      "sourceSize": { "w": 46, "h": 62 }
+    }
+  },
+  "meta": {
+    "image": "elementals.png",
+    "size": { "w": 454, "h": 470 },
+    "scale": "1"
+  }
+}
