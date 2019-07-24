@@ -31,6 +31,7 @@ class Character {
     this.sprite = charactersHelper.getSprite(type, charactersHelper.actions.IDLE);
 
     this.resize();
+    this.center();
 
     this.container.addChild(this.sprite);
     stage.addChild(this.container);
@@ -53,15 +54,12 @@ class Character {
     }
     this.sprite.width = newW;
     this.sprite.height = newH;
+  }
 
-    const spaceH = constants.tileWidth - this.sprite.width;
-    const spaceV = constants.tileHeight - this.sprite.height;
-
-    const x = (positionHelper.indexToPxH(this.position.x)) + spaceH / 2;
-    const y = (positionHelper.indexToPxV(this.position.y)) + spaceV / 2;
-
-    this.sprite.x = x;
-    this.sprite.y = y;
+  center(){
+    const centered = positionHelper.centerSpriteInTile(this.sprite, this.position);
+    this.sprite.x = centered.x;
+    this.sprite.y = centered.y;
   }
 
   select() {
