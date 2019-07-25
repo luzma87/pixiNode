@@ -64,7 +64,8 @@ const optimizePath = (pathTiles) => {
   const finalTile = pathTiles.length - 1;
   let wasNextHorizontal = false;
   let wasNextVertical = false;
-  let wasNextDiagonal = false;
+  let wasNextDiagonalInc = false;
+  let wasNextDiagonalDec = false;
 
   for (let index = 0; index < finalTile; index++) {
     const isFirstRound = index === 0;
@@ -75,40 +76,50 @@ const optimizePath = (pathTiles) => {
     const sameY = nextTile.position.y === tile.position.y;
     const xPlus1 = nextTile.position.x === tile.position.x + 1;
     const yPlus1 = nextTile.position.y === tile.position.y + 1;
-    const isNextHorizontal = sameY && xPlus1;
-    const isNextVertical = sameX && yPlus1;
-    const isNextDiagonal = xPlus1 && yPlus1;
-
+    const xMinus1 = nextTile.position.x === tile.position.x - 1;
+    const yMinus1 = nextTile.position.y === tile.position.y - 1;
+    const isNextHorizontal = (sameY && xPlus1) || (sameY && xMinus1);
+    const isNextVertical = (sameX && yPlus1) || (sameX && yMinus1);
+    const isNextDiagonalInc = xPlus1 && yPlus1;
+    const isNextDiagonalDec = xMinus1 && yMinus1;
     if (isFirstRound) {
       newPathTiles.push(tile);
-      if (isNextHorizontal || isNextVertical || isNextDiagonal) {
+      if (isNextHorizontal || isNextVertical || isNextDiagonalInc || isNextDiagonalDec) {
         wasNextHorizontal = isNextHorizontal;
         wasNextVertical = isNextVertical;
-        wasNextDiagonal = isNextDiagonal;
+        wasNextDiagonalInc = isNextDiagonalInc;
+        wasNextDiagonalDec = isNextDiagonalDec;
         continue;
       }
       wasNextHorizontal = isNextHorizontal;
       wasNextVertical = isNextVertical;
-      wasNextDiagonal = isNextDiagonal;
+      wasNextDiagonalInc = isNextDiagonalInc;
+      wasNextDiagonalDec = isNextDiagonalDec;
       newPathTiles.push(nextTile);
       continue;
     }
-    if (!isLastRound && (isNextHorizontal || isNextVertical || isNextDiagonal)) {
-      if (isNextHorizontal !== wasNextHorizontal || isNextVertical !== wasNextVertical || isNextDiagonal !== wasNextDiagonal) {
+    if (!isLastRound && (isNextHorizontal || isNextVertical || isNextDiagonalInc || isNextDiagonalDec)) {
+      if (isNextHorizontal !== wasNextHorizontal || isNextVertical !== wasNextVertical || isNextDiagonalInc !== wasNextDiagonalInc || isNextDiagonalDec !== wasNextDiagonalDec) {
+        if (isNextDiagonalInc !== wasNextDiagonalInc || isNextDiagonalDec !== wasNextDiagonalDec) {
+          newPathTiles.push(tile);
+        }
         wasNextHorizontal = isNextHorizontal;
         wasNextVertical = isNextVertical;
-        wasNextDiagonal = isNextDiagonal;
+        wasNextDiagonalInc = isNextDiagonalInc;
+        wasNextDiagonalDec = isNextDiagonalDec;
         newPathTiles.push(nextTile);
         continue;
       }
       wasNextHorizontal = isNextHorizontal;
       wasNextVertical = isNextVertical;
-      wasNextDiagonal = isNextDiagonal;
+      wasNextDiagonalInc = isNextDiagonalInc;
+      wasNextDiagonalDec = isNextDiagonalDec;
       continue;
     }
     wasNextHorizontal = isNextHorizontal;
     wasNextVertical = isNextVertical;
-    wasNextDiagonal = isNextDiagonal;
+    wasNextDiagonalInc = isNextDiagonalInc;
+    wasNextDiagonalDec = isNextDiagonalDec;
     newPathTiles.push(nextTile);
   }
   return newPathTiles;
