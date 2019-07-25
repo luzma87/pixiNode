@@ -82,9 +82,12 @@ const optimizePath = (pathTiles) => {
     const isNextVertical = (sameX && yPlus1) || (sameX && yMinus1);
     const isNextDiagonalInc = xPlus1 && yPlus1;
     const isNextDiagonalDec = xMinus1 && yMinus1;
+    const isContinuous = isNextHorizontal || isNextVertical || isNextDiagonalInc || isNextDiagonalDec;
+    const changedDiagonalDirection = isNextDiagonalInc !== wasNextDiagonalInc || isNextDiagonalDec !== wasNextDiagonalDec;
+    const changedDirection = isNextHorizontal !== wasNextHorizontal || isNextVertical !== wasNextVertical || changedDiagonalDirection;
     if (isFirstRound) {
       newPathTiles.push(tile);
-      if (isNextHorizontal || isNextVertical || isNextDiagonalInc || isNextDiagonalDec) {
+      if (isContinuous) {
         wasNextHorizontal = isNextHorizontal;
         wasNextVertical = isNextVertical;
         wasNextDiagonalInc = isNextDiagonalInc;
@@ -98,9 +101,9 @@ const optimizePath = (pathTiles) => {
       newPathTiles.push(nextTile);
       continue;
     }
-    if (!isLastRound && (isNextHorizontal || isNextVertical || isNextDiagonalInc || isNextDiagonalDec)) {
-      if (isNextHorizontal !== wasNextHorizontal || isNextVertical !== wasNextVertical || isNextDiagonalInc !== wasNextDiagonalInc || isNextDiagonalDec !== wasNextDiagonalDec) {
-        if (isNextDiagonalInc !== wasNextDiagonalInc || isNextDiagonalDec !== wasNextDiagonalDec) {
+    if (!isLastRound && isContinuous) {
+      if (changedDirection) {
+        if (changedDiagonalDirection) {
           newPathTiles.push(tile);
         }
         wasNextHorizontal = isNextHorizontal;
