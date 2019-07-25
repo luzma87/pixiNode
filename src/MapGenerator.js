@@ -23,9 +23,13 @@ class MapGenerator {
     ];
   }
 
-  getMap() {
+  getIdsMap() {
+    return this.map;
+  }
+
+  getTilesMap(map) {
     const tilesMap = [];
-    this.map.forEach((row, rowIndex) => {
+    map.forEach((row, rowIndex) => {
       let tilesRow = [];
       row.forEach((tileId, colIndex) => {
         const tile = {...tiles[tileId]};

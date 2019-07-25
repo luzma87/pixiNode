@@ -25,8 +25,7 @@ class LzMapTile {
 
   flip() {
     const {flip} = this.tile;
-    const randomIndex = chance.integer({min: 0, max: flip.length - 1});
-    const flipped = flip[randomIndex];
+    const flipped = chance.pickone(flip);
     if (flipped.includes('v')) {
       this.sprite.anchor.y = 1;
       this.sprite.scale.y = -1;
@@ -39,8 +38,7 @@ class LzMapTile {
 
   rotate() {
     const {rotate} = this.tile;
-    const randomIndex = chance.integer({min: 0, max: rotate.length - 1});
-    const rotation = rotate[randomIndex];
+    const rotation = chance.pickone(rotate);
     const rotationRadians = rotation * Math.PI / 180;
     this.sprite.anchor.x = 0.5;
     this.sprite.anchor.y = 0.5;
