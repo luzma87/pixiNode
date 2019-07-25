@@ -260,7 +260,7 @@ describe('pathfinderHelper', () => {
   });
 
   describe('optimizePath', () => {
-    it('returns the first and last tiles when they have the same x', () => {
+    it('returns the first and last tiles when they are in a vertical line', () => {
       const tile1 = testHelper.makeTile({position: {x: 0, y: 0}});
       const tile2 = testHelper.makeTile({position: {x: 0, y: 1}});
       const tile3 = testHelper.makeTile({position: {x: 0, y: 2}});
@@ -274,11 +274,25 @@ describe('pathfinderHelper', () => {
       expect(optimizedPath).to.have.deep.ordered.members(expectedPath);
     });
 
-    it('returns the first and last tiles when they have the same y', () => {
+    it('returns the first and last tiles when they are in a horizontal line', () => {
       const tile1 = testHelper.makeTile({position: {x: 0, y: 0}});
       const tile2 = testHelper.makeTile({position: {x: 1, y: 0}});
       const tile3 = testHelper.makeTile({position: {x: 2, y: 0}});
       const tile4 = testHelper.makeTile({position: {x: 3, y: 0}});
+      const tilePath = [tile1, tile2, tile3, tile4];
+      const expectedPath = [tile1, tile4];
+
+      const optimizedPath = pathfinderHelper.optimizePath(tilePath);
+
+      expect(optimizedPath).to.have.lengthOf(2);
+      expect(optimizedPath).to.have.deep.ordered.members(expectedPath);
+    });
+
+    it('returns the first and last tiles when they are in a diagonal line', () => {
+      const tile1 = testHelper.makeTile({position: {x: 0, y: 0}});
+      const tile2 = testHelper.makeTile({position: {x: 1, y: 1}});
+      const tile3 = testHelper.makeTile({position: {x: 2, y: 2}});
+      const tile4 = testHelper.makeTile({position: {x: 3, y: 3}});
       const tilePath = [tile1, tile2, tile3, tile4];
       const expectedPath = [tile1, tile4];
 
@@ -311,6 +325,38 @@ describe('pathfinderHelper', () => {
       const tile4 = testHelper.makeTile({position: {x: 1, y: 2}});
       const tile5 = testHelper.makeTile({position: {x: 2, y: 2}});
       const tile6 = testHelper.makeTile({position: {x: 3, y: 2}});
+      const tilePath = [tile1, tile2, tile3, tile4, tile5, tile6];
+      const expectedPath = [tile1, tile4, tile6];
+
+      const optimizedPath = pathfinderHelper.optimizePath(tilePath);
+
+      expect(optimizedPath).to.have.lengthOf(3);
+      expect(optimizedPath).to.have.deep.ordered.members(expectedPath);
+    });
+
+    it('returns the tiles where direction is changed vertical to diagonal', () => {
+      const tile1 = testHelper.makeTile({position: {x: 0, y: 0}});
+      const tile2 = testHelper.makeTile({position: {x: 0, y: 1}});
+      const tile3 = testHelper.makeTile({position: {x: 0, y: 2}});
+      const tile4 = testHelper.makeTile({position: {x: 1, y: 3}});
+      const tile5 = testHelper.makeTile({position: {x: 2, y: 4}});
+      const tile6 = testHelper.makeTile({position: {x: 3, y: 5}});
+      const tilePath = [tile1, tile2, tile3, tile4, tile5, tile6];
+      const expectedPath = [tile1, tile4, tile6];
+
+      const optimizedPath = pathfinderHelper.optimizePath(tilePath);
+
+      expect(optimizedPath).to.have.lengthOf(3);
+      expect(optimizedPath).to.have.deep.ordered.members(expectedPath);
+    });
+
+    it('returns the tiles where direction is changed horizontal to diagonal', () => {
+      const tile1 = testHelper.makeTile({position: {x: 0, y: 0}});
+      const tile2 = testHelper.makeTile({position: {x: 1, y: 0}});
+      const tile3 = testHelper.makeTile({position: {x: 2, y: 0}});
+      const tile4 = testHelper.makeTile({position: {x: 3, y: 1}});
+      const tile5 = testHelper.makeTile({position: {x: 4, y: 2}});
+      const tile6 = testHelper.makeTile({position: {x: 5, y: 3}});
       const tilePath = [tile1, tile2, tile3, tile4, tile5, tile6];
       const expectedPath = [tile1, tile4, tile6];
 

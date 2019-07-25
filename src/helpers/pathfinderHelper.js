@@ -64,6 +64,7 @@ const optimizePath = (pathTiles) => {
   const finalTile = pathTiles.length - 1;
   let wasNextHorizontal = false;
   let wasNextVertical = false;
+  let wasNextDiagonal = false;
 
   for (let index = 0; index < finalTile; index++) {
     const isFirstRound = index === 0;
@@ -76,72 +77,40 @@ const optimizePath = (pathTiles) => {
     const yPlus1 = nextTile.position.y === tile.position.y + 1;
     const isNextHorizontal = sameY && xPlus1;
     const isNextVertical = sameX && yPlus1;
-
-    console.log("--------------------------");
-    console.log(tile.position, nextTile.position,
-      /*{sameX, sameY, xPlus1, yPlus1, isNextHorizontal, isNextVertical, wasNextHorizontal, wasNextVertical}*/);
+    const isNextDiagonal = xPlus1 && yPlus1;
 
     if (isFirstRound) {
-      console.log("first");
       newPathTiles.push(tile);
-      console.log("added ", index, "total->", newPathTiles.length);
-      if (isNextHorizontal || isNextVertical) {
-        console.log("a) skipped ", index);
+      if (isNextHorizontal || isNextVertical || isNextDiagonal) {
         wasNextHorizontal = isNextHorizontal;
         wasNextVertical = isNextVertical;
+        wasNextDiagonal = isNextDiagonal;
         continue;
       }
-      console.log("a) in");
       wasNextHorizontal = isNextHorizontal;
       wasNextVertical = isNextVertical;
+      wasNextDiagonal = isNextDiagonal;
       newPathTiles.push(nextTile);
-      console.log("added ", index, "total->", newPathTiles.length);
       continue;
     }
-    console.log("next");
-    if (!isLastRound && (isNextHorizontal || isNextVertical)) {
-      console.log("AQUI", {isNextHorizontal, isNextVertical, wasNextHorizontal, wasNextVertical});
-      if (isNextHorizontal !== wasNextHorizontal || isNextVertical !== wasNextVertical) {
-        console.log("c) in");
+    if (!isLastRound && (isNextHorizontal || isNextVertical || isNextDiagonal)) {
+      if (isNextHorizontal !== wasNextHorizontal || isNextVertical !== wasNextVertical || isNextDiagonal !== wasNextDiagonal) {
         wasNextHorizontal = isNextHorizontal;
         wasNextVertical = isNextVertical;
+        wasNextDiagonal = isNextDiagonal;
         newPathTiles.push(nextTile);
-        console.log("added ", index, "total->", newPathTiles.length);
         continue;
       }
       wasNextHorizontal = isNextHorizontal;
       wasNextVertical = isNextVertical;
-      console.log("b) skipped ", index);
+      wasNextDiagonal = isNextDiagonal;
       continue;
     }
-    console.log("b) in");
     wasNextHorizontal = isNextHorizontal;
     wasNextVertical = isNextVertical;
+    wasNextDiagonal = isNextDiagonal;
     newPathTiles.push(nextTile);
-    console.log("added ", index, "total->", newPathTiles.length);
   }
-  // pathTiles.forEach((tile, index) => {
-  // const {position: {x, y}} = tile;
-  // if (x !== lastX && y !== lastY) {
-  //   console.log(1);
-  //   if (index > 0) {
-  //     console.log(2);
-  //     newPathTiles.push(pathTiles[index - 1]);
-  //   }
-  //   newPathTiles.push(tile);
-  // } else if (index === finalTile) {
-  //   console.log(3);
-  //   newPathTiles.push(tile);
-  // }
-  // if (lastX !== x || lastY !== y) {
-  //   console.log(4);
-  //   lastX = x;
-  //   lastY = y;
-  // }
-  // console.log(">>>");
-  // console.log(newPathTiles);
-  // console.log("=======================");
-  // });
   return newPathTiles;
 };
 
