@@ -420,7 +420,7 @@ describe('pathfinderHelper', () => {
 
       const optimizedPath = pathfinderHelper.optimizePath(tilePath);
 
-      // expect(optimizedPath).to.have.lengthOf(3);
+      expect(optimizedPath).to.have.lengthOf(4);
       expect(optimizedPath).to.have.deep.ordered.members(expectedPath);
     });
   });
