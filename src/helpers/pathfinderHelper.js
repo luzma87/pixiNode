@@ -103,14 +103,11 @@ const optimizePath = (pathTiles) => {
     }
     if (!isLastRound && isContinuous) {
       if (changedDirection) {
-        if (changedDiagonalDirection) {
-          newPathTiles.push(tile);
-        }
         wasNextHorizontal = isNextHorizontal;
         wasNextVertical = isNextVertical;
         wasNextDiagonalInc = isNextDiagonalInc;
         wasNextDiagonalDec = isNextDiagonalDec;
-        newPathTiles.push(nextTile);
+        newPathTiles.push(tile);
         continue;
       }
       wasNextHorizontal = isNextHorizontal;
