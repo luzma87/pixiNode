@@ -7,7 +7,10 @@ const types = {
   grass: {
     name: "Grass",
     sprite: "grass",
-    speed: 0.6,
+    speed: {
+      min: 0.4,
+      max: 0.6
+    },
     chance: 0.05,
     size: {
       min: 0.6,
@@ -21,7 +24,10 @@ const types = {
   fire: {
     name: "Fire",
     sprite: "fire",
-    speed: 0.5,
+    speed:  {
+      min: 0.3,
+      max: 0.5
+    },
     chance: 0.025,
     size: {
       min: 0.65,
@@ -55,7 +61,7 @@ const getTexturesArray = (type, action) => {
   const name = `${typeSprite}_${actionSprite}`;
   const textures = [];
   Object.keys(spritesheet.textures).forEach((textureName) => {
-    if(startsWith(textureName, name)) {
+    if (startsWith(textureName, name)) {
       textures.push(spritesheet.textures[textureName]);
     }
   });
